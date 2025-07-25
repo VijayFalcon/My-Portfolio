@@ -4,51 +4,78 @@
     <meta charset = "UTF-8">
     <meta name = "viewport" content = "width-device-width, initial-scale=1.0">
     <link rel="icon" type="image/icon" href="Images/favicon.png">
-    <title>Vijay Aravindh Portfolio - Contact</title>
+    <title>Vijay Aravindh Portfolio - Home</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div id="theme-toggle">
-    <div class="slider">
-      <img src="Images/moon.png" class="moon">
-      <img src="Images/sun.png" class="sun">
-    </div>
-  </div>
+    <div id="theme-toggle">
+        <div class="slider">
+          <img src="Images/moon.png" class="moon">
+          <img src="Images/sun.png" class="sun">
+        </div>
+      </div>
     <div id="navi">
     <nav class="navbar">
-    <ul>
+    <ul class = "navs">
         <button><li><a href="index.html">Home</a></li></button>
+        <button><li><a href="projects.html">Projects</a></li></button>
         <button><li><a href="achieve.html">Achievements</a></li></button>
         <button><li><a href="cert.html">Certifications</a></li></button>
         <button><li><a href="contact.html">Contact</a></li></button>
     </ul>
     </nav>
     </div>
-    <br>
-    <br>
-    <br>
-    <hr>
-    <br>
-    <label>Linkedin Profile:</label> 
-    <a href= "https://www.linkedin.com/in/vijay-aravindh-srinivasan/" title = "Click here to visit my LinkedIn Profile"><img src="Images/linkedin.png" class = "linkedin"></a>
-    <br><br><br><br><br><br><br><br><br><br><hr>
-    <label>Email:</label>
-    <div class = "container">
-    <a href ="mailto:www.vijayaravindhsrinivasan@gmail.com" title = "Click here for my Personal Email">
-    <img src = "Images/personalmail.png" class = "personal"></a>
-    <a href = "mailto:www.vijayaravindh.s2023@vitstudent.ac.in" title = "Click here for my University Email">
-    <img src = "Images/studentmail.png" class = "university"></a>
-    </div>
-    <br><br><br><br><br><br><br><br><br><br><hr>
-    <label>GitHub:</label>
-    <a href = "https://github.com/VijayFalcon" title = "Click here to visit my GitHub account"><img src = "Images/github.png" class = "github"></a>
-    <script src="script.js"></script>
+
+
+  <br><br><br><hr><br>
+
+
+<label>Linkedin Profile:</label>
+<div>
+  <a href="https://www.linkedin.com/in/vijay-aravindh-srinivasan/" title="Click here to visit my LinkedIn Profile">
+    <img src="Images/linkedin.png" class="linkedin" alt="LinkedIn Icon">
+  </a>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><hr>
+
+<label>GitHub:</label>
+<div>
+  <a href="https://github.com/VijayFalcon" title="Click here to visit my GitHub account">
+    <img src="Images/github.png" class="github" alt="GitHub Icon">
+  </a>
+</div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr> 
+
+
+
+  <label>Email:</label>
+  <div class="container" style="display: flex; flex-direction: column; align-items: center;">
+    <form id="contactForm" action="mailto:vijayaravindhsrinivasan@gmail.com" method="POST" enctype="text/plain" style="width: 100%; max-width: 480px; display: flex; flex-direction: column; align-items: center;">
+
+      <input type="email" name="senderEmail" placeholder="Your Email-ID" required style="font-size: smaller; width: 95%; height: 36px; margin: 6px 0;">
+
+      <input type="text" name="senderName" placeholder="Your Name" required style="font-size: smaller; width: 95%; height: 36px; margin: 6px 0;">
+
+      <input type="tel" name="contactNumber" placeholder="Your Contact Number" required style="font-size: smaller; width: 95%; height: 36px; margin: 6px 0;">
+
+      <input type="text" name="subject" placeholder="Subject" required style="font-size: smaller; width: 95%; height: 36px; margin: 6px 0;">
+
+      <textarea name="message" rows="7" placeholder="Type your content here:" required style="font-size: smaller; width: 95%; margin: 6px 0; resize: vertical; min-height: 120px;"></textarea>
+      <button type="submit" style="font-size: smaller; width: 60%; max-width: 200px; margin-top: 12px;">
+        Send
+      </button>
+    </form>
+  </div>
+
+
+  <script src="script.js"></script>
 </body>
 </html>
